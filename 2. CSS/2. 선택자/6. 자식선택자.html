@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- > : 직속자식만 지정할 수 있다.-->
+    <!-- font : 부모의 속성을 자식들이 자동으로 물려받는다.-->
+    <style>
+        ul > .orange {
+            color: orange;
+        }
+
+        div > ul > li {
+            font-weight: bold;
+        }
+
+        div > ul > li > ol {
+            color: yellow;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <h1>안녕안녕~</h1>
+    <div>
+        <ul>
+            <li>사과
+                <ol>
+                    <li>1번째</li>
+                    <li>2번째</li>
+                    <li>3번째</li>
+                </ol>
+            </li>
+                
+            <li class="orange">오렌지</li>
+            <li>딸기
+                <ol>  <!-- ol>li*3{$번째} CTRL + space-->
+                    <li>1번째</li>
+                    <li>2번째</li>
+                    <li>3번째</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오렌지</span>
+
+
+</body>
+</html>
