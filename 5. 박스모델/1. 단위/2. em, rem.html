@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+        
+        body * {
+            border: 2px solid black
+        }
+
+        .container {
+            font-size: 20px;
+            width : 60em;   /*1200px*/
+        }
+
+        .parent { 
+            width: 50%; /*600px*/
+            font-size: 2em; /*40px*/
+        }
+
+        .child {
+            width: 30%;
+            font-size: 3rem; /*html 의 폰트사이즈의 3배 */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">Container
+        <div class="parent">Parent
+            <div class="child">child1</div>
+            <div class="child">child2</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
