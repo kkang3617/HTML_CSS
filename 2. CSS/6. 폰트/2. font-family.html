@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글폰트 사이트에서 <link> 가져온것  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet"> -->
+
+    <style>
+        /* import로 글씨체 가져옴. */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+        @font-face {
+            font-family: 'CookieRun';
+            src: url(./fonts/CookieRun\ Regular.ttf);
+        }
+
+        div {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .font1 {
+            /* 바탕체 계열 */
+            font-family:serif;
+        }
+        
+        .font2 {
+            /* 고딕체 계열 */
+            font-family: sans-serif;
+        }
+        
+        .font3 {
+            /* 모노스페이스 계열: 가로폭이 동등한 글꼴 계열 */
+            font-family: monospace;
+        }
+
+        .font4 {
+            /* 필기체 계열 */
+            font-family: cursive;
+        }
+
+        .font5 {
+            /* 화려한 계열 */
+            font-family: fantasy;
+        }
+
+        .font6 {   
+            font-family: 'Noto Sans KR', sans-serif;  /* 구글폰트 가져온것 */
+        }   /*css rules to specify faimilies 복사해서 붙여넣은것*/
+
+        h1 {
+            /*font-family: 'CookieRun', sans-serif; /*폰트패밀리는 2개이상 써주어야 한다..*/
+                                        /*표현이되지 않았을 때 대체 폰트로 나오게 하기위해*/
+            /*font-size: 30px;
+            font-weight: bold;
+            font-style: oblique;
+            line-height: 1.4em;*/
+
+            /* font: 스타일 두께 크기 / 줄높이 글꼴 */
+            /* 단축 속성 사용 시 font-size와 font-family는 필수로 지정해야한다. */
+            font: oblique bold 30px / 1.4 'CookieRun', sans-serif;  /*단축속성*/
+        }                              
+    </style>
+
+</head>
+<body>
+    
+    <div class="font1">Hello World!</div>
+    <div class="font2">Hello World!</div>
+    <div class="font3">Hello World!</div>
+    <div class="font4">Hello World!</div>
+    <div class="font5">Hello World!</div>
+    <div class="font6">Hello World!</div>
+
+    <h1>용감한 쿠키가 달립니다~</h1>
+
+</body>
+</html>
