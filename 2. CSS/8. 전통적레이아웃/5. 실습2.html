@@ -12,61 +12,91 @@
     <style>
         section.flower {
             width: 900px;
-            height: 400px;
+            height: 500px;
             background: gray;
-            border: black double 3px;
+            border: 3px double black;
+            margin: 100px 200px;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 40px;
             font-weight: bold;
-            font-family: cursive;
+            font-family: '궁서체', cursive, serif;
             text-align: center;
-            margin: 20px auto;
+            background: lightgray;
+            padding: 30px;
+        }
+        h2 {
+            height: 120px;
+            border: 1px solid lightgray;
+            margin : 5px;
+        }
+        p {
+            padding: 15px;
+            line-height: 1.3;
+        }
+        li{
+            height: 320px;
         }
         .intro {
-            font-size: 24px;
+            font-size: 20px;
             background: rgb(43, 43, 43);
             color: white;
             text-align: center;
             padding: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         .intro em {
             color: yellow;
         }
-        
+        .gallery {
+            font-size: 20px;
+            background: gray;
+        }
         #tulip {
             width:23.5%;
             background: red;
             margin: 0 5px;
+            border: 1px solid lightgray;
             float: left;
         }
         #tulip> h2 {
-            height: 100px;
-            background: url(./images/tulip.jpg) no-repeat;
-        }
-        #tulip> p {
-            margin-top: 10px;
+            background: url(./images/tulip.jpg) no-repeat center / cover;
         }
         #jebi {
-            width: 23.75%;
+            width: 23.5%;
             background: violet;
             margin: 0 5px;
+            border: 1px solid lightgray;
             float: left;
+        }
+        #jebi> h2 {
+            background: url(./images/jebi.jpg) no-repeat center / cover;
         }
         #hobak {
-            width: 23.75%;
+            width: 23.5%;
             background: orange;
             margin: 0 5px;
+            border: 1px solid lightgray;
             float: left;
         }
+        #hobak> h2 {
+            background: url(./images/hobak.jpg) no-repeat center / cover;
+        }
         #sunflower {
-            width: 23.75%;
+            width: 23.5%;
             background: yellow;
             margin: 0 5px;
+            border: 1px solid lightgray;
             float: left;
-            
+        }
+        #sunflower > h2 {
+            background: url(./images/sunflower.jpg) no-repeat center / cover;
+        }   
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
         }
     </style>
 
@@ -80,7 +110,7 @@
             표정있는 꽃들을 선호할 것이다.
         </p>
 
-        <ul class="gallery">
+        <ul class="gallery clearfix">
             <li id="tulip">
                 <h2></h2>  <!-- 각 h2에 background속성을 사용해서 url로 꽃 이미지 넣기 -->
                 <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
