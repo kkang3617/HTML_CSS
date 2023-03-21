@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     
     <style>
-        section.flower {
+        section {
             width: 900px;
             height: 500px;
             background: gray;
             border: 3px double black;
-            margin: 100px 200px;
+            margin: 100px 100px;
         }
 
-        h1 {
+        section h1 {
             font-size: 40px;
             font-weight: bold;
             font-family: '궁서체', cursive, serif;
@@ -34,6 +34,7 @@
         p {
             padding: 15px;
             line-height: 1.3;
+            text-align: justify;
         }
         li{
             height: 320px;
@@ -51,7 +52,6 @@
         }
         .gallery {
             font-size: 20px;
-            background: gray;
         }
         #tulip {
             width:23.5%;
@@ -60,7 +60,7 @@
             border: 1px solid lightgray;
             float: left;
         }
-        #tulip> h2 {
+        #tulip h2 {
             background: url(./images/tulip.jpg) no-repeat center / cover;
         }
         #jebi {
@@ -70,7 +70,7 @@
             border: 1px solid lightgray;
             float: left;
         }
-        #jebi> h2 {
+        #jebi h2 {
             background: url(./images/jebi.jpg) no-repeat center / cover;
         }
         #hobak {
@@ -80,7 +80,7 @@
             border: 1px solid lightgray;
             float: left;
         }
-        #hobak> h2 {
+        #hobak h2 {
             background: url(./images/hobak.jpg) no-repeat center / cover;
         }
         #sunflower {
@@ -90,7 +90,7 @@
             border: 1px solid lightgray;
             float: left;
         }
-        #sunflower > h2 {
+        #sunflower h2 {
             background: url(./images/sunflower.jpg) no-repeat center / cover;
         }   
         .clearfix::after {
@@ -103,7 +103,7 @@
 </head>
 <body>
     
-    <section class="flower">
+    <section>
         <h1>나의 아름다운 정원</h1>
         <p class="intro">
             사람들은 아마 자신에게 <em>자신감을 북돋워 주는</em> 

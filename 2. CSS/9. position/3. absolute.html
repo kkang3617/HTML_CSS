@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grandparent {
+            width: 400px;
+            height: 300px;
+            padding: 100px;
+            border: 4px dashed gray;
+            position: relative;  /*grandparent의 바텀에서 위로 150px 오른쪽에서 왼쪽으로 100px */
+        }                       /* 포지션이 두개면 위에 부모를 따라감.*/
+
+        .parent {
+            width: 300px;
+            height: 300px;
+            border: 4px dashed lightgray;
+            /*position: relative;  부모의 바텀에서 위로 150px 왼쪽 100px */
+            position: absolute;
+            left: 100px;
+            top: 200px;
+        }
+
+        .child {
+            width: 120px;
+            height: 80px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 100px; /* 왼쪽이동 */
+            bottom: 150px; /* 위 이동 */
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!-- .grandparent>.parent>.child*3{$} -->
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child absolute">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+
+</body>
+</html>
